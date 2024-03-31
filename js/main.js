@@ -2,6 +2,7 @@ import { getData } from './modules/getData.js'
 import { converter } from './modules/converter.js'
 import { Select } from './modules/select/select.js'
 import { History } from './modules/history/history.js'
+import { Popup } from './modules/popup/popup.js'
 
 const startRate = async () => {
   const data = await getData(URL)
@@ -41,6 +42,8 @@ const select = new Select('#select', {
 
 const history = new History('#history')
 
+const popup = new Popup('#popup')
+
 inputNumber.addEventListener('input', (event) => {
   const num = event.target.value
   outputNumber.value = converter.conversion(num, rate)
@@ -59,6 +62,16 @@ historyBtn.addEventListener('click', () => {
       rateB: defaultRate,
       currencyA: inputNumber.value,
       currencyB: outputNumber.value,
+    })
+
+    popup.create({
+      message: 'Is test popup!',
+      type: 'done',
+    })
+  } else {
+    popup.create({
+      message: 'Please fill the input',
+      type: 'warning',
     })
   }
 })

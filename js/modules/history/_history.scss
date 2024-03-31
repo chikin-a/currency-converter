@@ -1,3 +1,15 @@
+.history {
+  @keyframes create-item {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
+
 .history__item {
   display: flex;
   flex-direction: column;
@@ -6,10 +18,10 @@
   border: 1px #cbd5e1 solid;
   border-radius: 9px;
   background: #f8f9ff;
-  /* border-bottom: 1px #cbd5e1 solid; */
   padding: 10px;
   width: 100%;
   margin-bottom: 14px;
+  animation: create-item 0.75s;
 }
 .history__item:last-child {
   margin-bottom: 0;

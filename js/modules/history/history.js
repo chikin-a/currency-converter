@@ -19,6 +19,8 @@ const getTemplate = (rateB, currencyA, currencyB) => {
 export class History {
   constructor(selector) {
     this.$el = document.querySelector(selector)
+
+    this.#setup
   }
 
   #setup() {
@@ -28,7 +30,6 @@ export class History {
   create(options) {
     const { rateB, currencyA, currencyB } = options
 
-    this.#setup
     this.$el.insertAdjacentElement(
       'afterbegin',
       getTemplate(rateB, currencyA, currencyB)
