@@ -1,0 +1,16 @@
+{
+  "name": "currency-converter",
+  "version": "1.0.0",
+  "main": "js/main.js",
+  "type": "module",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.0"
+  },
+  "scripts": {
+    "compile-scss": "node-sass --watch scss -o css"
+  },
+  "author": "Anton Chikin",
+  "license": "ISC",
+  "description": ""
+}

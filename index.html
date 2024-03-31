@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="popup" class="popup"></div>
+    <main>
+      <section class="converter">
+        <div class="container">
+          <div class="converter__form">
+            <div class="converter__input">
+              <div>UAH</div>
+              <input
+                class="converter__number"
+                type="number"
+                id="inputNumber"
+                placeholder="0,00"
+              />
+            </div>
+
+            <div class="converter__output">
+              <div id="select"></div>
+              <input
+                class="converter__number"
+                type="number"
+                id="outputNumber"
+                placeholder="0,00"
+              />
+            </div>
+
+            <button id="historyButton" class="primary-btn">
+              Add to History
+            </button>
+
+            <hr />
+
+            <div id="history"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

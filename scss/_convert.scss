@@ -1,0 +1,55 @@
+.converter {
+  .converter__form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .converter__input,
+  .converter__output {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .converter__input div {
+    background: #f8f9ff;
+    border: #cbd5e1 1px solid;
+    width: 100px;
+    height: 45px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .converter__input input,
+  .converter__output input {
+    flex: 1;
+  }
+
+  .converter__number {
+    padding: 0 10px;
+    height: 45px;
+    border: #cbd5e1 1px solid;
+    border-radius: 7px;
+    outline: none;
+    transition: border 0.2s ease-in-out;
+  }
+
+  .converter__number:focus {
+    border-color: #a1acbb;
+  }
+
+  .converter__output select {
+    background: #f8f9ff;
+    width: 100px;
+    border: #cbd5e1 1px solid;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    outline: none;
+  }
+}

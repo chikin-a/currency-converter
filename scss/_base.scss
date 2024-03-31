@@ -1,0 +1,39 @@
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  display: block;
+  margin: auto;
+  max-width: 40em;
+  padding: 48px;
+}
+
+@media (max-width: 620px) {
+  .container {
+    padding: 0;
+  }
+}
+
+.primary-btn {
+  width: 100%;
+  height: 45px;
+  border-radius: 7px;
+  background: #1e293b;
+  color: #fff;
+  border: none;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background: #2a3953;
+  }
+}
+
+hr {
+  border-color: #cbd5e1;
+  border-style: dashed;
+}

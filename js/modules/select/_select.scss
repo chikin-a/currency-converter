@@ -1,0 +1,71 @@
+.select {
+  position: relative;
+  z-index: 100;
+}
+.select.open .select__dropdown {
+  display: flex;
+  justify-content: center;
+}
+.select.open .select__backdrop {
+  display: block;
+}
+.select__input {
+  cursor: pointer;
+  background: #f8f9ff;
+  border: #cbd5e1 1px solid;
+  width: 100px;
+  height: 45px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select__dropdown {
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  padding: 5px;
+  background: #ffffff;
+  border: #cbd5e1 1px solid;
+  border-radius: 7px;
+  width: 100%;
+}
+.select__backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.select__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.select__item {
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 3px;
+  width: 100%;
+  padding: 7px 0;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.15s ease-in-out;
+  border-color: transparent;
+  outline-color: transparent;
+}
+.select__item:last-child {
+  margin-bottom: 0;
+}
+.select__item:hover {
+  background: #f4f6ff;
+  outline: #cbd5e1 1px solid;
+}
+.select__item.selected {
+  background: #f4f6ff;
+  outline: #cbd5e1 1px solid;
+}
